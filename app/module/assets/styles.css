@@ -1,0 +1,71 @@
+.sidebar_style  {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    bottom: 56px;
+    width: 250px;
+    padding: 20px;
+    height: auto;
+    background-color: #f8f9fa;
+    overflow-y: auto;
+}
+.content_style{
+    margin-left: 250px;
+    margin-top: 56px;
+    margin-bottom: 56px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+.navlink-style {
+    background-color: transparent !important;
+    color: #2F2F2F !important;
+}
+.navlink-style.active {
+    background-color: #2F2F2F !important;
+    color: white !important;
+}
+.navlink-style:hover {
+    background-color: #2f2f2f8b !important;
+    color: white !important;
+}
+.navlink-style.active:hover {
+    background-color: #2F2F2F !important;
+    color: white !important;
+}
+.accordion-style .accordion-item{
+    background: transparent;
+    .accordion-header{
+        background: transparent;
+        .accordion-button {
+            background: transparent;
+            padding: 10px;
+        }
+        .accordion-button[aria-expanded="true"] {
+            border-radius: 7px;
+            background: #2f2f2f8b;
+            color: white
+        }
+        .accordion-button:focus{
+            box-shadow: none
+        }
+    }
+    .accordion-body{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+.markdown-style{
+    margin-bottom: 5px;
+    pre{
+        margin: 0px;
+        border:1px solid gray;
+        code{
+            background: #F8F9FA;
+        };
+    };
+}
+.style-graf{
+    margin-top: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
