@@ -93,6 +93,51 @@ def homePage():
                ],style= {'listStyle': 'none'})
             ]),
             html.Br(),
+            html.H5("🐳 Dockerización"),
+            html.Div([
+               html.Ul([
+                  html.Li(html.P("*Ya existe el archivo Dockerfile*")),
+                  html.Li(html.H6("# Generar el docker build")),
+                  html.Ul(html.Div([
+                     dcc.Markdown(
+                        "```python\n"
+                        "docker build -t @{user}/@{nameImage}:@{version} . \n"
+                     ),
+                     html.P('ejem: docker build -t llnandollff90/reporte-dash:1 .')
+                     ],
+                     className='markdown-style'
+                  )),
+                  html.Li(html.H6("# Correr el docker build")),
+                  html.Ul(html.Div([
+                     dcc.Markdown(
+                        "```python\n"
+                        "docker run -p {hostLocal}:{contenedorHost} @{user}/@{nameImage}:@{version} \n"
+                     ),
+                     html.P('ejem: docker run -p 8050:8050 llnandollff90/reporte-dash:1')
+                     ],
+                     className='markdown-style'
+                  )),
+                  html.Li(html.H6("# App disponible en Local:")),
+                  html.Ul(html.Div([
+                     dcc.Markdown(
+                        "```python\n"
+                        "http://127.0.0.1:8050/ \n"
+                        "```"
+                     )],
+                     className='markdown-style'
+                  )),
+                  html.Li(html.H6("# App disponible internamente del Contenedor:")),
+                  html.Ul(html.Div([
+                     dcc.Markdown(
+                        "```python\n"
+                        "http://172.17.0.2:8050/ \n"
+                        "```"
+                     )],
+                     className='markdown-style'
+                  ))
+               ],style= {'listStyle': 'none'})
+            ]),
+            html.Br(),
             html.H5("✍️ Autor"),
             html.Div([
                html.Ul([

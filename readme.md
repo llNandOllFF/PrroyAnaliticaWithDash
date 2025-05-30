@@ -35,6 +35,18 @@
     # App disponible en:
     http://127.0.0.1:8050/ 
 
+🐳 Dockerización
+    *Ya existe el archivo Dockerfile*
+    # Generar la build
+    docker build -t @{user}/@{nameImage}:@{version} .
+    # Correr el docker build
+    docker run -p 8050:8050 @{user}/@{nameImage}:@{version}
+    # Acceder a la web (localmente)
+    http://localhost:8050/
+    
+    # Acceder a la web (internamente - docker)
+    http://172.17.0.2:8050
+
 ✍️ Autor
     Fernando Flores Fernandez
     📅 Año: 2025
