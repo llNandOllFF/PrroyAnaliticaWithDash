@@ -24,12 +24,16 @@
         │── 📁 utils # funciones auxiliares y herramientas de soporte
 
 🔧 Instalación y ejecución
+    
     # Crear un entorno virtual
     python -m venv .venv 
+    
     # Activar entorno virtual
     .\.venv\Scripts\activate 
+    
     # Ejecutar la aplicación
     python main.py 
+    
     *Al ejecutar la aplicación, se instalaran las dependencias automaticamente*
 
     # App disponible en:
@@ -37,10 +41,13 @@
 
 🐳 Dockerización
     *Ya existe el archivo Dockerfile*
+    
     # Generar la build
     docker build -t @{user}/@{nameImage}:@{version} .
+    
     # Correr el docker build
     docker run -p 8050:8050 @{user}/@{nameImage}:@{version}
+    
     # Acceder a la web (localmente)
     http://localhost:8050/
     
