@@ -59,7 +59,8 @@
     http://172.17.0.2:8050
 
 ✍️ Autor
-    Fernando Flores Fernandez
-    📅 Año: 2025
-    📧 Contacto: ''
-    📂 GitHub: ''
+    
+    🧑‍💻Fernando Flores Fernandez
+        📅 Año: 2025
+        📧 Contacto: ''
+        📂 GitHub: ''
