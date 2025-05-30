@@ -1,8 +1,10 @@
 📌 Descripción
+    
     Esta es una aplicacion web interactiva desarrollada en Dash, una libreria de python para creacion de Dashboards
     Su proposito es mostrar de una manera estructura datos y graficos que satisfagan las necesidades de la organización.
 
 🚀 Tecnologías utilizadas
+    
     Python
     Dash
     Plotly
@@ -11,6 +13,7 @@
     geopandas
 
 📂 Estructura del proyecto
+    
     📂 proyecto
     │── 📄 app.py # Código principal de la aplicación Dash
     │── 📄 requirements.txt # Lista de dependencias
@@ -40,6 +43,7 @@
     http://127.0.0.1:8050/ 
 
 🐳 Dockerización
+    
     *Ya existe el archivo Dockerfile*
     
     # Generar la build
